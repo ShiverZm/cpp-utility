@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{a1d4dc16-158f-4a43-8c15-a6d55bb8c2fb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\tools\tool_DnsLookup.hpp">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tools\tool_Formatting.hpp">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tools\tool_Gdip.hpp">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tools\tool_Gzip.hpp">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tools\tool_Json.hpp">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tools\tool_Logging.hpp">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tools\tool_MakeAvi.hpp">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tools\tool_Mutex.hpp">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tools\tool_NetInfo.hpp">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tools\tool_ObjectPool.hpp">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tools\tool_PE.hpp">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tools\tool_Priv.hpp">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tools\tool_Process.hpp">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tools\tool_QQWry.hpp">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tools\tool_Qt.hpp">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tools\tool_Register.hpp">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tools\tool_Resource.hpp">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tools\tool_Rsa.hpp">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tools\tool_SerialPort.hpp">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tools\tool_String.hpp">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tools\tool_SysInfo.hpp">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tools\tool_Tracert.hpp">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tools\tool_Tracert2.hpp">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tools\tool_Utils.hpp">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tools\tool_VP9.hpp">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tools\tool_WebRequest.hpp">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tools\tool_WMI.hpp">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tools\tool_Zoomer.hpp">
+      <Filter>tools</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
