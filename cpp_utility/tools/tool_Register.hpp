@@ -25,6 +25,30 @@ class tool_Register {
 	tool_Register () = delete;
 
 public:
+	static int add_key(std::wstring path) {
+		HKEY main_key  = parse_path(path);
+		DWORD dwOptions = REG_OPTION_NON_VOLATILE;
+		DWORD dwDisposition;
+		long resulte = RegCreateKeyEx(main_key, path.c_str(), 0, NULL,
+			dwOptions, KEY_WRITE, NULL, &main_key, &dwDisposition);
+		if (resulte != ERROR_SUCCESS)
+		{
+			return -1;//打开注册表示失败
+		}
+		else
+		{
+			if (dwDisposition == REG_OPENED_EXISTING_KEY)
+			{
+				return 1;//打开一个存在的注册表项
+			}
+			else if (dwDisposition == REG_CREATED_NEW_KEY)
+			{
+				return 2;//新建一个注册表项
+			}
+		}
+		return 0;
+	}
+
 	static bool set_path (std::wstring path, BYTE *data, DWORD data_len) {
 		HKEY main_key = parse_path (path);
 		return (ERROR_SUCCESS == ::RegSetValueExW (main_key, path.c_str (), 0, REG_BINARY, data, data_len));
@@ -60,7 +84,7 @@ public:
 	static bool set_key (std::wstring path, std::wstring key_name, std::wstring data, bool expand = false) {
 		HKEY hKey = parse_path (path);
 		if (ERROR_SUCCESS != ::RegOpenKeyExW (hKey, path.c_str (), 0, KEY_WRITE, &hKey)) return false;
-		bool bRet = (ERROR_SUCCESS == ::RegSetValueExW (hKey, key_name.c_str (), 0, (expand ? REG_EXPAND_SZ : REG_SZ), (BYTE*) &data[0], (DWORD) data.size ()));
+		bool bRet = (ERROR_SUCCESS == ::RegSetValueExW (hKey, key_name.c_str (), 0, (expand ? REG_EXPAND_SZ : REG_SZ), (BYTE*) &data[0], (DWORD) 2*data.size()));
 		::RegCloseKey (hKey);
 		return bRet;
 	}
