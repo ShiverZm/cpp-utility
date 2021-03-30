@@ -68,7 +68,9 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)\tools;$(SolutionDir)\socket;$(IncludePath)</IncludePath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -110,6 +112,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\socket\Socket.hpp" />
     <ClInclude Include="..\tools\tool_DnsLookup.hpp" />
     <ClInclude Include="..\tools\tool_Formatting.hpp" />
     <ClInclude Include="..\tools\tool_Gdip.hpp" />
@@ -138,6 +141,15 @@
     <ClInclude Include="..\tools\tool_WebRequest.hpp" />
     <ClInclude Include="..\tools\tool_WMI.hpp" />
     <ClInclude Include="..\tools\tool_Zoomer.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\socket\Address.cpp" />
+    <ClCompile Include="..\socket\CommonSocket.cpp" />
+    <ClCompile Include="..\socket\Datagram.cpp" />
+    <ClCompile Include="..\socket\SocketException.cpp" />
+    <ClCompile Include="..\socket\TCP.cpp" />
+    <ClCompile Include="..\socket\UDP.cpp" />
+    <ClCompile Include="test_socket.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

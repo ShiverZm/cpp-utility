@@ -16,6 +16,9 @@
     <Filter Include="tools">
       <UniqueIdentifier>{a1d4dc16-158f-4a43-8c15-a6d55bb8c2fb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="socket">
+      <UniqueIdentifier>{6bd3b28e-bf71-4833-aaf6-6d8b594ad67e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\tools\tool_DnsLookup.hpp">
@@ -102,5 +105,31 @@
     <ClInclude Include="..\tools\tool_Zoomer.hpp">
       <Filter>tools</Filter>
     </ClInclude>
+    <ClInclude Include="..\socket\Socket.hpp">
+      <Filter>socket</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\socket\Address.cpp">
+      <Filter>socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\socket\CommonSocket.cpp">
+      <Filter>socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\socket\Datagram.cpp">
+      <Filter>socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\socket\SocketException.cpp">
+      <Filter>socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\socket\TCP.cpp">
+      <Filter>socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\socket\UDP.cpp">
+      <Filter>socket</Filter>
+    </ClCompile>
+    <ClCompile Include="test_socket.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
