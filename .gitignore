@@ -4,6 +4,8 @@
 *.db
 *.opendb
 
+*.idb
+*.log
 *.obj
 *.pdb
 *.tlog
