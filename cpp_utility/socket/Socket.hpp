@@ -32,7 +32,7 @@
 #include <vector>
 #include <fstream>
 
-#if defined __WIN32 || defined __WIN64
+#if defined __WIN32 || defined __WIN64 || defined _WIN32
     #define WINDOWS
 #endif
 
@@ -55,7 +55,7 @@ namespace Socket
     typedef string Ip;
     typedef unsigned int Port;
 #ifdef WINDOWS
-    typedef int socklen_t;
+    typedef unsigned int socklen_t;
 #endif
     
     class SocketException : public exception

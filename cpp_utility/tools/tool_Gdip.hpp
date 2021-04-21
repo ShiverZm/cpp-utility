@@ -19,6 +19,7 @@
 
 
 
+
 class tool_Gdip {
 	// 获取指定文件格式的clsid
 	static bool gdip_get_encoder_clsid (LPCWSTR format, CLSID* pClsid) {

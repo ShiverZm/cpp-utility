@@ -1,5 +1,10 @@
 .vs
 
-
+.git
 *.db
-*opendb
+*.opendb
+
+*.obj
+*.pdb
+*.tlog
+/cpp_utility/example/CppNet/test_tcp_server/Debug

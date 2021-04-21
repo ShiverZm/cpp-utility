@@ -110,6 +110,9 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="test_socket.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
     <ClCompile Include="..\socket\Address.cpp">
       <Filter>socket</Filter>
     </ClCompile>
@@ -127,9 +130,6 @@
     </ClCompile>
     <ClCompile Include="..\socket\UDP.cpp">
       <Filter>socket</Filter>
-    </ClCompile>
-    <ClCompile Include="test_socket.cpp">
-      <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
