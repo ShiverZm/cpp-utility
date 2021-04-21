@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CppNet", "CppNet", "{65A7B5
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_tcp_server", "example\CppNet\test_tcp_server\test_tcp_server.vcxproj", "{ED2D380B-13AA-4C57-B984-B644FBDA2310}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_tcp_client", "example\NetCpp\test_tcp_client\test_tcp_client.vcxproj", "{118FC0BF-1045-480B-B2BA-1C619AA590F7}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_tcp_client", "example\CppNet\test_tcp_client\test_tcp_client.vcxproj", "{118FC0BF-1045-480B-B2BA-1C619AA590F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
