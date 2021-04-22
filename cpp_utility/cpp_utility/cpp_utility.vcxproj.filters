@@ -108,6 +108,9 @@
     <ClInclude Include="..\socket\Socket.hpp">
       <Filter>socket</Filter>
     </ClInclude>
+    <ClInclude Include="..\tools\tool_SCManager.hpp">
+      <Filter>tools</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="test_socket.cpp">
