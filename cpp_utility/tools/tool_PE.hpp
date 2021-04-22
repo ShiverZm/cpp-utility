@@ -20,7 +20,7 @@
 #include <Windows.h>
 #include <DbgHelp.h>
 
-#include "tools/tool_String.hpp"
+#include "tool_String.hpp"
 
 #pragma comment (lib, "Dbghelp.lib")
 #pragma comment (lib, "Version.lib")
